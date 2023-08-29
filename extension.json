@@ -1,0 +1,27 @@
+{
+  "identifier": "aleksandrbeliaev.ExtendSelectionBackwards",
+  "name": "Extend Selection Backwards",
+  "organization": "Aleksandr Beliaev",
+  "description": "Extend or shrink your current selection backwards.",
+  "version": "0.0.1",
+  "categories": ["commands"],
+  "bugs": "https://github.com/certainlyakey/ExtendSelectionBackwards.novaextension/issues",
+  "main": "main.js",
+
+  "commands": {
+    "editor": [
+      {
+        "title": "Extend Selection Backwards",
+        "command": "extendSelectionBackwards.extendSelectionBackwards",
+        "shortcut": "ctrl-alt-shift-left",
+        "when": "editorHasFocus && editorHasSelection"
+      },
+      {
+        "title": "Shrink Selection Backwards",
+        "command": "extendSelectionBackwards.shrinkSelectionBackwards",
+        "shortcut": "ctrl-alt-shift-right",
+        "when": "editorHasFocus && editorHasSelection"
+      }
+    ]
+  }
+}
